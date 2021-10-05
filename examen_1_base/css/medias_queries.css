@@ -59,3 +59,25 @@ article {
 .image img{
     width: 200px;
 }
+@media (max-width: 900px)
+{
+   
+    .pub{
+        display: none;
+    }
+    #main_container{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 120px 1fr 200px;
+        grid-gap: 10px;
+        grid-template-areas: 
+            "header header header"
+            "pub article ."
+            ". image .";
+    
+        
+        margin: 0px 0px;
+    }
+   
+    
+}
